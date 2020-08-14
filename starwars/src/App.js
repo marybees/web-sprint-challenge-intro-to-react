@@ -1,19 +1,30 @@
 import React from 'react';
 import './App.css';
 import CharacterDetails from './components/CharacterDetails'
+import styled from 'styled-components'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const Title = styled.div`
+font-family: 'Monoton', cursive;
+font-size: 100px;
+padding: 1% 0 0 0;
+color: white;
+`
+;
+
+const SubTitle = styled.div`
+font-family: 'Saira', sans-serif;
+font-size: 50px;
+padding: 0 0 3% 0;
+color: white;
+`
+;
 
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
-
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
-
   return (
     <div className="App">
-      <h1 className='header'>Star Wars Original Trilogy</h1>
-      <h3 className='sub-header'>Meet the Characters</h3>
+      <Title className='header'>Star Wars</Title>
+      <SubTitle className='sub-header'>Meet the Characters</SubTitle>
       <CharacterDetails/>
     </div>
   );
