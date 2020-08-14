@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Character from './components/Character';
+import CharacterDetails from './components/CharacterDetails'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -14,6 +14,7 @@ const App = () => {
     <div className="App">
       <h1 className='header'>Star Wars Original Trilogy</h1>
       <h3 className='sub-header'>Meet the Characters</h3>
+      <CharacterDetails/>
     </div>
   );
 }
